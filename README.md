@@ -13,6 +13,7 @@ A randomizer for **Final Fantasy VII** on PC (Steam): the original game (both th
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts.
+- **Version numbers** read 1.*games supported*.*features released*: 1.4.60 supports 4 games and has 60 options.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -71,6 +72,10 @@ Off by default:
 - **⚠ Risky:** roaming enemies, Queen's Blood decks, field music and Folio skill trees.
 
 Key items, summons and other things the story needs never move.
+
+### Crisis Core -Final Fantasy VII- Reunion
+
+In the game list, but **not implemented yet**. It's planned for a later update.
 
 ### About the "⚠ Risky" options
 
