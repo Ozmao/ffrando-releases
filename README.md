@@ -2,12 +2,13 @@
 
 A randomizer for **Final Fantasy** on PC (Steam):
 
+- **Final Fantasy I, II, III, IV, V and VI**: the Pixel Remasters.
 - **Final Fantasy VII**: the original game (both the current Steam release and the 2013 one), **Remake Intergrade** and **Rebirth**.
 - **Final Fantasy IX**, with or without the Memoria mod engine.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7 or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For FF9, join a race with an invite link or host one yourself, with a live leaderboard.
@@ -19,7 +20,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.5.72 supports 5 games and has 72 options.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.79 supports 11 games and has 79 options.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -28,12 +29,22 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set.
 4. Press **Randomize**.
-5. Start the game. In the original FF7 and in FF9, start a **new game**: starting materia, items and gear only apply to a new game, and FF9's Chaos Seed randomizes when a new game starts. Drops, chests, shops and the rest of FF7's options apply everywhere.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
 
 ## What it can shuffle
+
+### Final Fantasy I to VI (Pixel Remaster, beta)
+
+All six share the same options:
+
+- **On by default:** treasure chests, shop stock, and enemy drops and steals. Each becomes something of a similar price: items stay items, and weapons and armor stay gear.
+- **Off by default:** shop prices (half to twice as much), enemy HP and stats, and enemy EXP and gil.
+- **⚠ Risky:** random encounters, each swapped for a battle of a similar level.
+
+Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
 
 ### Final Fantasy VII (Steam release and 2013)
 
@@ -118,7 +129,7 @@ The options in the **⚠ Risky: may break the game** section change things the g
 Not everything has been tried in game yet:
 
 - **Confirmed in game:** for the original FF7, drops, morphs, starting gear, materia slots, chests and shops.
-- **Not yet confirmed:** everything else, including all Remake and Rebirth options and FF9 on the plain game.
+- **Not yet confirmed:** everything else, including all Remake and Rebirth options, FF9 on the plain game and the Pixel Remasters.
 
 If something breaks, press **Put originals back**, and please report it on the [issues page](https://github.com/Ozmao/ffrando-releases/issues) with your seed and the options you picked.
 
