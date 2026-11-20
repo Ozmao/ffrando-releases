@@ -142,10 +142,6 @@ The options in the **⚠ Risky: may break the game** section change things the g
 ## This is an early version
 
 Not everything has been tried in game yet:
-
-- **Confirmed in game:** for the original FF7, drops, morphs, starting gear, materia slots, chests and shops.
-- **Not yet confirmed:** everything else, including all Remake and Rebirth options, FF9 on the plain game and the Pixel Remasters.
-
 If something breaks, press **Put originals back**, and please report it on the [issues page](https://github.com/Ozmao/ffrando-releases/issues) with your seed and the options you picked.
 
 ## Licenses
