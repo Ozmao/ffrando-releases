@@ -133,7 +133,7 @@ Races work for every game in the list. Open the **Race** card in the left column
 
 ### Crisis Core -Final Fantasy VII- Reunion
 
-In the game list, but **not implemented yet**. It's planned for a later update.
+In the game list, but **not implemented yet**. It's planned for a later update. I don't own the game yet so I can't build it because I dont have the tables :(
 
 ### About the "⚠ Risky" options
 
