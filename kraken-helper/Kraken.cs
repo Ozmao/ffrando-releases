@@ -14,7 +14,7 @@
 using System.Numerics;
 using System.Runtime.InteropServices;
 
-namespace FF7Rando.KrakenHelper;
+namespace FFRando.KrakenHelper;
 
 #pragma warning disable CS0649 // HuffReader fields start at zero on purpose
 

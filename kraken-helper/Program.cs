@@ -1,4 +1,4 @@
-// FF7Rando.Kraken: decompresses Oodle Kraken blocks for the FF7 Randomizer.
+// FFRando.Kraken: decompresses Oodle Kraken blocks for the FF Randomizer.
 // Copyright (C) 2026 Ozmao. Based on ooz, Copyright (C) 2016 Powzix.
 //
 // This program is free software: you can redistribute it and/or modify it under the terms of the GNU General
@@ -15,11 +15,11 @@
 
 using System.Buffers.Binary;
 using System.Text;
-using FF7Rando.KrakenHelper;
+using FFRando.KrakenHelper;
 
 if (!Console.IsInputRedirected)
 {
-    Console.WriteLine("FF7Rando.Kraken: Oodle Kraken decompressor used by the FF7 Randomizer (GPL-3.0, based on ooz).");
+    Console.WriteLine("FFRando.Kraken: Oodle Kraken decompressor used by the FF Randomizer (GPL-3.0, based on ooz).");
     return 0;
 }
 

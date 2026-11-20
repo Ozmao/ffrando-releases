@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <!-- FF7Rando.Kraken: GPL-3.0 (see COPYING). A separate program the randomizer runs; it ships inside
-       FF7Rando.exe as a resource and is unpacked to %LOCALAPPDATA%\FF7Rando when needed.
+  <!-- FFRando.Kraken: GPL-3.0 (see COPYING). A separate program the randomizer runs; it ships inside
+       FFRando.exe as a resource and is unpacked to %LOCALAPPDATA%\FFRando when needed.
        Build: dotnet publish -c Release -->
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,8 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyName>FF7Rando.Kraken</AssemblyName>
-    <Product>FF7Rando.Kraken</Product>
+    <AssemblyName>FFRando.Kraken</AssemblyName>
+    <Product>FFRando.Kraken</Product>
     <Version>1.0.0</Version>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
