@@ -38,11 +38,15 @@ Every randomize starts from the original files, so seeds never stack. Backups an
 
 ### Final Fantasy I to VI (Pixel Remaster, beta)
 
-All six share the same options:
+All six share most options:
 
 - **On by default:** treasure chests, shop stock, and enemy drops and steals. Each becomes something of a similar price: items stay items, and weapons and armor stay gear.
-- **Off by default:** shop prices (half to twice as much), enemy HP and stats, and enemy EXP and gil.
-- **⚠ Risky:** random encounters, each swapped for a battle of a similar level.
+- **Off by default:**
+  - shop prices (half to twice as much), and weapon and armor stats;
+  - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, and enemy EXP and gil;
+  - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music.
+- **For some games only:** spells learned by level (FF4, FF6), job abilities (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
+- **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, and job commands (FF3, FF5).
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
 
