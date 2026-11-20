@@ -20,7 +20,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.11.80 supports 11 games and has 80 features.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.116 supports 11 games and has 116 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -46,13 +46,17 @@ All six share most options:
   - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, and enemy EXP and gil;
   - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music.
 - **For some games only:** spells learned by level (FF4, FF6), job abilities (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
-- **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, and job commands (FF3, FF5).
+- **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5) and double bosses.
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
 
 ### Final Fantasy VII (Steam release and 2013)
 
 Enemy drops, steals and morphs · items in chests and materia lying around · shops and shop prices · random battles (at a similar level, or anywhere) · enemy HP and stats · spells between magic materia · summons between summon materia · materia slots on gear · starting materia, items and gear · stat growth · the order limit breaks are learned in (or, experimentally, limits between characters).
+
+Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP.
+
+**⚠ Risky:** field music and double bosses.
 
 On the new Steam release, chests and random battles are only shuffled when playing in English.
 
@@ -108,7 +112,19 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | Steal items | yes | yes |
 | Treasure chests and finds | yes | yes |
 | Tetra Master cards | yes | yes |
+| Enemy drops | yes | yes |
+| Card drops | yes | yes |
+| EXP, AP and gil | yes | yes |
+| Enemy stats | yes | yes |
+| Weaknesses and immunities | yes | yes |
+| Blue Magic (who teaches what) | yes | yes |
+| Ability AP | yes | yes |
+| Weapon and armor stats | yes | yes |
+| Spell power and MP | yes | yes |
+| Starting equipment (needs a new game) | yes | yes |
 | ⚠ Synthesis recipes | yes | yes |
+| ⚠ Boss stats | yes | yes |
+| ⚠ Double bosses | yes | yes |
 | ⚠ Random encounters | needs Memoria | yes |
 | ⚠ Key items | needs Memoria | yes |
 | Cutscene skipper (doesn't change the seed) | needs Memoria | yes |
@@ -138,6 +154,8 @@ In the game list, but **not implemented yet**. It's planned for a later update. 
 ### About the "⚠ Risky" options
 
 The options in the **⚠ Risky: may break the game** section change things the game may rely on. They could soft-lock a quest, crash a scene or make an area far too hard. Keep a save from before you turn them on, and turn them off again if something goes wrong.
+
+**⚠ Double bosses** (original FF7, FF9 and the Pixel Remasters) gives boss battles a second copy of their boss when there's room for one more enemy. Bosses made of parts, and battles with helpers that join later or with a battle script, stay as they are. Killing one copy can end some fights, and big bosses can overlap. With Memoria, randomize again after changing your other Memoria mods. Remake and Rebirth don't have it: their boss battles can't be changed yet.
 
 ## This is an early version
 
