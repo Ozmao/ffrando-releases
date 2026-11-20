@@ -11,7 +11,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 - **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7 or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
-- **Races.** For FF9, join a race with an invite link or host one yourself, with a live leaderboard.
+- **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
 - **Spoiler log.** Every randomize writes one, and the app shows it in its own window, so you can look up where something went.
 
 ## Download
@@ -20,7 +20,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.11.79 supports 11 games and has 79 options.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.80 supports 11 games and has 80 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -109,12 +109,23 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | ⚠ Key items | needs Memoria | yes |
 | Cutscene skipper (doesn't change the seed) | needs Memoria | yes |
 
-### Final Fantasy IX races
+### Races
 
-Open the **Race** section in the FF9 panel.
+Races work for every game in the list. Open the **Race** card in the left column, under **Seed**.
 
-- **Join a race:** paste the invite link the host sent you and pick the name other racers see. FFRando sets the race seed and turns the spoiler log off. With Memoria, Chaos Seed sends your progress to the live leaderboard. On the plain game you race on the same seed, but nothing is reported. **Leave** takes you out of the race again.
-- **Host a race:** FFRando runs the race server while it stays open. Racers get a Cloudflare link, so your IP isn't shown and no port forwarding is needed. FFRando uses cloudflared if it's on your PC, or downloads it once from Cloudflare. Either way it only runs a copy signed by Cloudflare. Copy the invite link, and open the moderator page or the leaderboard from the Race section. A new link can take a minute before it works.
+- **Host a race:**
+  - Pick the game, the seed and the options, then click **Start hosting**. FFRando runs the race server for as long as it stays open.
+  - Send racers the invite link. It's a Cloudflare link, so your IP isn't shown and you don't need port forwarding. A new link can take a minute before it works.
+  - FFRando uses cloudflared if it's already on your PC, or downloads it once from Cloudflare. Either way, it only runs a copy signed by Cloudflare.
+  - **Start the race** starts the clock. **Use this game, seed and options** updates what racers who join after that get.
+  - The Race card also opens the moderator page and the leaderboard.
+- **Join a race:** paste the invite link and type the name other racers will see, then click **Join**.
+  - FFRando switches to the race's game and sets its seed and options. They stay locked while you race, and the spoiler log stays hidden.
+  - Press **Randomize** and start a new game.
+  - Keep FFRando open while you race so you show up on the live leaderboard. Press **I finished** when you beat the game.
+  - Use the same FFRando version as the host: the same seed can shuffle differently between versions.
+  - **Leave** takes you out of the race again.
+- **FF9 with Memoria:** Chaos Seed reports from inside the game, including which items you found, your disc and your play time.
 
 ### Crisis Core -Final Fantasy VII- Reunion
 
