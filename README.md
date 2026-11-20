@@ -20,7 +20,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.11.116 supports 11 games and has 116 features.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.129 supports 11 games and has 129 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -44,8 +44,9 @@ All six share most options:
 - **Off by default:**
   - shop prices (half to twice as much), and weapon and armor stats;
   - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, and enemy EXP and gil;
+  - item power, starting gear and battle backgrounds;
   - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music.
-- **For some games only:** spells learned by level (FF4, FF6), job abilities (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
+- **For some games only:** spells learned by level (FF4, FF6), job abilities and job stats (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
 - **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5) and double bosses.
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
@@ -54,7 +55,7 @@ Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items
 
 Enemy drops, steals and morphs · items in chests and materia lying around · shops and shop prices · random battles (at a similar level, or anywhere) · enemy HP and stats · spells between magic materia · summons between summon materia · materia slots on gear · starting materia, items and gear · stat growth · the order limit breaks are learned in (or, experimentally, limits between characters).
 
-Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP.
+Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP · item power (Potions, Ethers, Grenades...) · new elements for elemental armor · battle backgrounds · world map battles (moved between areas, chocobo battles stay).
 
 **⚠ Risky:** field music and double bosses.
 
@@ -74,6 +75,7 @@ Off by default:
 - Starting armor and materia.
 - Spells between magic materia, and the effects of command, support and independent materia.
 - Weapon abilities and weapon upgrade skills.
+- Weapon attack and magic attack.
 - Stat growth between Cloud, Barret, Tifa and Aerith.
 - **⚠ Risky:** enemy groups between fights, Fort Condor opponents and music.
 
@@ -94,6 +96,7 @@ Off by default:
 - Starting gear.
 - Spells between magic materia, and the other materia kinds.
 - Weapon abilities.
+- Weapon attack and magic attack.
 - **⚠ Risky:** roaming enemies, Queen's Blood decks, field music and Folio skill trees.
 
 Key items, summons and other things the story needs never move.
@@ -122,6 +125,8 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | Weapon and armor stats | yes | yes |
 | Spell power and MP | yes | yes |
 | Starting equipment (needs a new game) | yes | yes |
+| Character stats (the party trades base stats) | yes | yes |
+| Magic stone costs | yes | yes |
 | ⚠ Synthesis recipes | yes | yes |
 | ⚠ Boss stats | yes | yes |
 | ⚠ Double bosses | yes | yes |
