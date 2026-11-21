@@ -8,13 +8,13 @@ A randomizer for **Final Fantasy** on PC (Steam):
 - **Final Fantasy IX**, with or without the Memoria mod engine.
 - **Final Fantasy X** and **Final Fantasy X-2**: the HD Remaster. Each is randomized on its own.
 - **Final Fantasy XII The Zodiac Age**.
-- **Final Fantasy XIII** and **Lightning Returns: Final Fantasy XIII**.
+- **Final Fantasy XIII**, **Final Fantasy XIII-2** and **Lightning Returns: Final Fantasy XIII**.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
 <p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII, FFXIII, Lightning Returns or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII, FFXIII, FFXIII-2, Lightning Returns or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
@@ -35,7 +35,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
-5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's, FFXII's, FFXIII's and Lightning Returns' options work in a save you already have too, except for chests you already opened.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's, FFXII's, FFXIII's, FFXIII-2's and Lightning Returns' options work in a save you already have too, except for chests you already opened.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
@@ -219,6 +219,19 @@ Everything works in a save you already have, but treasure you already opened sta
 
 <p align="center"><img src="screenshots/ff13.png" width="680" alt="The Final Fantasy XIII options: treasure, shops, prices, enemy drops and enemy stats"></p>
 
+### Final Fantasy XIII-2 (beta)
+
+**FINAL FANTASY XIII-2** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives in `alba_data\sys` (the English and Japanese voice versions: about 36 KB each to `white_scru.win32.bin` and `white_scrc.win32.bin`, and 52 KB each to `white_imgu.win32.bin` and `white_imgc.win32.bin`) and points the game at them. **Put originals back** removes them again.
+
+- **Treasure**: what treasure spheres hold (items, equipment, adornments, materials and gil) trades places with others of a similar worth. Key items, fragments, artefacts, gate seals, gravitons and maps stay.
+- **Shops**: what Chocolina sells changes to other items of the same kind and rank, the same way at every stock level, so weapons stay Serah's or Noel's. Potion, Phoenix Down and materials stay.
+- **Enemy drops**: what enemies drop is shuffled between enemies of a similar HP. Bosses trade with each other, and monster crystals and gil stay.
+- **Prices** and **enemy HP and stats** (off unless you tick them).
+
+A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
+
+<p align="center"><img src="screenshots/ff132.png" width="680" alt="The Final Fantasy XIII-2 options: treasure, shops, prices, enemy drops and enemy stats"></p>
+
 ### Lightning Returns: Final Fantasy XIII (beta)
 
 **LIGHTNING RETURNS: FINAL FANTASY XIII** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives (`weiss_data\sys\white_img2a.win32.bin` and `white_img2v.win32.bin`, about 1.2 MB each) and points the game at them. **Put originals back** removes them again.
@@ -272,6 +285,8 @@ FFRando.exe contains **FFRando.Kraken**, a small separate program that decompres
 The FFXII chest addresses, area and item ranks, shop names and boss list come from Bartz24's [FF12 Open World Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
 
 The FFXIII treasure difficulties and locations, item and enemy ranks, shop names and boss list come from Bartz24's [FF13 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
+
+The FFXIII-2 treasure traits and locations, item kinds, enemy names and boss list come from Bartz24's [FF13-2 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). FFXIII-2 scrambles its file lists the same way as Lightning Returns (see below).
 
 The Lightning Returns treasure difficulties and locations, item kinds and ranks, enemy names, shop names and boss list come from Bartz24's [LR Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). How Lightning Returns scrambles its file lists was learned from Surihix's [WhiteBinTools](https://github.com/Surihix/WhiteBinTools) (GPL-3.0); FFRando has its own code for it.
 
