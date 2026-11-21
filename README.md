@@ -122,10 +122,12 @@ Both Steam releases: **FINAL FANTASY VIII** (2013) and **FINAL FANTASY VIII Rema
 - **Draw lists**: shuffled within each level range. Guardian Forces stay where they are.
 - **Enemy cards**: the cards monsters turn into with the Card command.
 - **Enemy HP and stats** and **enemy elements** (off unless you tick them).
+- **Enemy status resistances** (off unless you tick it): each enemy's partial resistances to ailments trade places. What it's immune to, or not resistant to at all, stays.
+- **Enemy EXP and AP** (off unless you tick it): up or down by up to a third.
 
 Everything works in a save you already have. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ff8.png" width="680" alt="The Final Fantasy VIII Remastered options: items, shops, draws and cards"></p>
+<p align="center"><img src="screenshots/ff8.png" width="680" alt="The Final Fantasy VIII Remastered enemy options: draws, cards, stats, elements, status resistances, EXP and AP"></p>
 
 ### Final Fantasy IX
 
@@ -173,10 +175,12 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 - **Weapon shops**: each weapon and armor becomes another one for the same character, from what the shops around that point of the story sell.
 - **Enemy drops**, **steal items** and **bribe items**: monsters trade with monsters of a similar strength, and bosses with bosses.
 - **Item prices**, **equipment drops** (the abilities and slots of the gear monsters drop) and **enemy HP and stats** (off unless you tick them).
+- **Enemy resistances** (off unless you tick it): every monster's fire, ice, lightning, water and holy weaknesses and resistances trade places, and so do its status resistances. Immunities stay. Scan's written tips may still describe the old ones.
+- **Enemy AP and gil** (off unless you tick it): up or down by up to a third, overkill AP too.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ffx.png" width="680" alt="The Final Fantasy X HD Remaster options: chests, shops, drops, steals and bribes"></p>
+<p align="center"><img src="screenshots/ffx.png" width="680" alt="The Final Fantasy X HD Remaster enemy options: drops, steals, bribes, equipment drops, stats, resistances, AP and gil"></p>
 
 ### Final Fantasy X-2 (beta)
 
@@ -188,10 +192,12 @@ The same **FINAL FANTASY X/X-2 HD Remaster** install, picked as **Final Fantasy 
 - **Accessories in shops**: each accessory a shop sells becomes another one from the shops that costs about as much.
 - **Enemy drops**, **steal items** and **bribe items**: fiends trade with fiends of a similar level, oversouls with oversouls, and bosses with bosses.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
+- **Enemy resistances** (off unless you tick it): every fiend's fire, ice, lightning, water and holy weaknesses and resistances trade places, and so do its status resistances. Immunities stay, and oversouls change the same way as their fiend.
+- **Enemy EXP and gil** (off unless you tick it): up or down by up to a third. Dressphere AP stays.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ffx2.png" width="680" alt="The Final Fantasy X-2 HD Remaster options: chests, garment grids, shops, drops, steals, bribes and stats"></p>
+<p align="center"><img src="screenshots/ffx2.png" width="680" alt="The Final Fantasy X-2 HD Remaster fiend options: drops, steals, bribes, stats, resistances, EXP and gil"></p>
 
 ### Final Fantasy XII The Zodiac Age (beta)
 
@@ -201,36 +207,50 @@ Everything works in a save you already have, but chests you already opened stay 
 - **Shops**: the weapons, armor, accessories, items, magicks and technicks shops sell trade places with others of the same kind and rank. Potion, Phoenix Down, Antidote and gambits stay.
 - **Enemy drops**, **steal items** and **poach items**: shuffled between enemies with similar HP. Bosses and marks trade with each other, and key items stay where they are.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
+- **Weapon and armor stats** (off unless you tick it): every weapon's attack, every armor and helm's defense and magick resist, and every shield's evasion go up or down by up to a third. Accessories stay.
+- **Enemy EXP, LP and clan points** (off unless you tick it): up or down by up to a third, and so does the rare gil.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ff12.png" width="680" alt="The Final Fantasy XII The Zodiac Age options: chests, shops, prices, drops, steals, poaches and stats"></p>
+<p align="center"><img src="screenshots/ff12.png" width="680" alt="The Final Fantasy XII The Zodiac Age options: chests, shops, prices, gear stats, drops, steals, poaches, enemy stats and rewards"></p>
 
 ### Final Fantasy XIII (beta)
 
-**FINAL FANTASY XIII** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives (`white_data\sys\white_imgu.win32.bin` and `white_imgc.win32.bin`, the English and Japanese voice versions, about 70 KB each) and points the game at them. **Put originals back** removes them again.
+**FINAL FANTASY XIII** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives (`white_data\sys\white_imgu.win32.bin` and `white_imgc.win32.bin`, the English and Japanese voice versions, at most about 230 KB each) and points the game at them. **Put originals back** removes them again.
 
 - **Treasure**: what every treasure sphere and mission reward holds (items, equipment and gil) trades places with others of a similar difficulty. Key items stay.
 - **Shops**: what the shops sell changes to other items of the same kind and rank, the same way in every shop and tier, so each character's weapons stay their own. Every character's first weapons stay on sale somewhere, and Potion and Phoenix Down stay.
 - **Enemy drops**: what enemies drop (common and rare) is shuffled between enemies of a similar rank. Bosses trade with each other, and key items stay.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
+- Off unless you tick them:
+  - **Enemy resistances**: the fire, ice, lightning, water, wind and earth resistances trade places, and so do the status resistances. Immunities stay.
+  - **Enemy stagger**: the stagger point and chain resistance go up or down by up to a third.
+  - **Weapon and accessory stats**: weapon strength and magic, and the HP, strength or magic bonus of accessories, go up or down by up to a third at every level.
+  - **Crystarium**: within each stage of each role, the stat and ability nodes trade places, so abilities come sooner or later (in the same order).
 
 Everything works in a save you already have, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ff13.png" width="680" alt="The Final Fantasy XIII options: treasure, shops, prices, enemy drops and enemy stats"></p>
+<p align="center"><img src="screenshots/ff13.png" width="680" alt="The Final Fantasy XIII enemy and equipment options: drops, stats, resistances, stagger, gear stats and the Crystarium"></p>
 
 ### Final Fantasy XIII-2 (beta)
 
-**FINAL FANTASY XIII-2** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives in `alba_data\sys` (the English and Japanese voice versions: about 36 KB each to `white_scru.win32.bin` and `white_scrc.win32.bin`, and 52 KB each to `white_imgu.win32.bin` and `white_imgc.win32.bin`) and points the game at them. **Put originals back** removes them again.
+**FINAL FANTASY XIII-2** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives in `alba_data\sys` (the English and Japanese voice versions `white_scru.win32.bin`, `white_scrc.win32.bin`, `white_imgu.win32.bin` and `white_imgc.win32.bin`; under 1 MB in all) and points the game at them. **Put originals back** removes them again.
 
 - **Treasure**: what treasure spheres hold (items, equipment, adornments, materials and gil) trades places with others of a similar worth. Key items, fragments, artefacts, gate seals, gravitons and maps stay.
 - **Shops**: what Chocolina sells changes to other items of the same kind and rank, the same way at every stock level, so weapons stay Serah's or Noel's. Potion, Phoenix Down and materials stay.
 - **Enemy drops**: what enemies drop is shuffled between enemies of a similar HP. Bosses trade with each other, and monster crystals and gil stay.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
+- Off unless you tick them:
+  - **Enemy resistances**: the fire, ice, lightning, water, wind and earth resistances trade places, and so do the debuff resistances. Immunities stay.
+  - **Enemy stagger**: how far the chain gauge must go, and the chain resistance, go up or down by up to a third.
+  - **Monster crystals and CP**: each enemy's crystal drop chance becomes half to three times what it was, and its CP goes up or down by up to a third.
+  - **Weapon and accessory stats**: weapons split their strength and magic differently (same total), and accessories cost up to a fifth more or less CL.
+  - **Equipment passives**: weapon passives trade places (Serah's among Serah's, Noel's among Noel's), and so do accessories' extra passives.
+  - **Crystarium**: each role learns its abilities at other levels, in the same order.
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/ff132.png" width="680" alt="The Final Fantasy XIII-2 options: treasure, shops, prices, enemy drops and enemy stats"></p>
+<p align="center"><img src="screenshots/ff132.png" width="680" alt="The Final Fantasy XIII-2 enemy and equipment options: drops, stats, resistances, stagger, crystals, gear, passives and the Crystarium"></p>
 
 ### Lightning Returns: Final Fantasy XIII (beta)
 
@@ -240,10 +260,15 @@ A save you already have should pick up the changes, but treasure you already ope
 - **Shops**: what the shops sell changes to other items of the same kind and rank, the same way in every shop and on every day. Potion, Phoenix Down, materials and Libra notes stay.
 - **Enemy drops**: what enemies drop (materials, abilities and the special drops) is shuffled between enemies of a similar HP. Bosses trade with each other, and key items stay.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
+- Off unless you tick them:
+  - **Enemy resistances**: the fire, ice, lightning and wind resistances trade places, and so do the debuff resistances. Immunities stay.
+  - **Enemy stagger**: the stagger point and stagger resistance go up or down by up to a third.
+  - **Weapon and shield stats**: strength, magic, HP and guard go up or down by up to a third, and so do the blacksmith's upgrade caps.
+  - **Garb passives**: the passive bonuses of garbs trade places between garbs. Their abilities and ATB stay.
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
-<p align="center"><img src="screenshots/lr.png" width="680" alt="The Lightning Returns options: treasure, shops, prices, enemy drops and enemy stats"></p>
+<p align="center"><img src="screenshots/lr.png" width="680" alt="The Lightning Returns enemy and equipment options: drops, stats, resistances, stagger, weapon and shield stats and garb passives"></p>
 
 ### Races
 
@@ -282,12 +307,12 @@ If something breaks, press **Put originals back**, and please report it on the [
 
 FFRando.exe contains **FFRando.Kraken**, a small separate program that decompresses Remake's and Rebirth's game files. It is based on [ooz](https://github.com/powzix/ooz) and licensed under the **GNU GPL v3**. Its full source and the license are in [`kraken-helper/`](kraken-helper). The app unpacks it to `%LOCALAPPDATA%\FFRando\helper` and runs it in the background while it reads the game.
 
-The FFXII chest addresses, area and item ranks, shop names and boss list come from Bartz24's [FF12 Open World Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
+The FFXII chest addresses, area and item ranks, shop names, boss list and equipment and enemy layouts come from Bartz24's [FF12 Open World Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
 
-The FFXIII treasure difficulties and locations, item and enemy ranks, shop names and boss list come from Bartz24's [FF13 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
+The FFXIII treasure difficulties and locations, item and enemy ranks, shop names, boss list and ability names come from Bartz24's [FF13 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
 
 The FFXIII-2 treasure traits and locations, item kinds, enemy names and boss list come from Bartz24's [FF13-2 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). FFXIII-2 scrambles its file lists the same way as Lightning Returns (see below).
 
-The Lightning Returns treasure difficulties and locations, item kinds and ranks, enemy names, shop names and boss list come from Bartz24's [LR Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). How Lightning Returns scrambles its file lists was learned from Surihix's [WhiteBinTools](https://github.com/Surihix/WhiteBinTools) (GPL-3.0); FFRando has its own code for it.
+The Lightning Returns treasure difficulties and locations, item kinds and ranks, enemy names, shop names and boss list come from Bartz24's [LR Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). How Lightning Returns scrambles its file lists was learned from Surihix's [WhiteBinTools](https://github.com/Surihix/WhiteBinTools) (GPL-3.0); FFRando has its own code for it. The Lightning Returns enemy and equipment fields were checked against the LR Research Team wiki.
 
 FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. This is a fan project and isn't affiliated with or endorsed by Square Enix. It ships no game data: it only changes the copy of the game you own.
