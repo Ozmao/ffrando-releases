@@ -8,12 +8,13 @@ A randomizer for **Final Fantasy** on PC (Steam):
 - **Final Fantasy IX**, with or without the Memoria mod engine.
 - **Final Fantasy X** and **Final Fantasy X-2**: the HD Remaster. Each is randomized on its own.
 - **Final Fantasy XII The Zodiac Age**.
+- **Final Fantasy XIII**.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
 <p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII, FFXIII or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
@@ -34,7 +35,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
-5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's and FFXII's options work in a save you already have too, except for chests you already opened.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's, FFXII's and FFXIII's options work in a save you already have too, except for chests you already opened.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
@@ -205,6 +206,19 @@ Everything works in a save you already have, but chests you already opened stay 
 
 <p align="center"><img src="screenshots/ff12.png" width="680" alt="The Final Fantasy XII The Zodiac Age options: chests, shops, prices, drops, steals, poaches and stats"></p>
 
+### Final Fantasy XIII (beta)
+
+**FINAL FANTASY XIII** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archives (`white_data\sys\white_imgu.win32.bin` and `white_imgc.win32.bin`, the English and Japanese voice versions, about 70 KB each) and points the game at them. **Put originals back** removes them again.
+
+- **Treasure**: what every treasure sphere and mission reward holds (items, equipment and gil) trades places with others of a similar difficulty. Key items stay.
+- **Shops**: what the shops sell changes to other items of the same kind and rank, the same way in every shop and tier, so each character's weapons stay their own. Every character's first weapons stay on sale somewhere, and Potion and Phoenix Down stay.
+- **Enemy drops**: what enemies drop (common and rare) is shuffled between enemies of a similar rank. Bosses trade with each other, and key items stay.
+- **Prices** and **enemy HP and stats** (off unless you tick them).
+
+Everything works in a save you already have, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
+
+<p align="center"><img src="screenshots/ff13.png" width="680" alt="The Final Fantasy XIII options: treasure, shops, prices, enemy drops and enemy stats"></p>
+
 ### Races
 
 Races work for every game in the list. Open the **Race** card in the left column, under **Seed**.
@@ -243,5 +257,7 @@ If something breaks, press **Put originals back**, and please report it on the [
 FFRando.exe contains **FFRando.Kraken**, a small separate program that decompresses Remake's and Rebirth's game files. It is based on [ooz](https://github.com/powzix/ooz) and licensed under the **GNU GPL v3**. Its full source and the license are in [`kraken-helper/`](kraken-helper). The app unpacks it to `%LOCALAPPDATA%\FFRando\helper` and runs it in the background while it reads the game.
 
 The FFXII chest addresses, area and item ranks, shop names and boss list come from Bartz24's [FF12 Open World Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
+
+The FFXIII treasure difficulties and locations, item and enemy ranks, shop names and boss list come from Bartz24's [FF13 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24).
 
 FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. This is a fan project and isn't affiliated with or endorsed by Square Enix. It ships no game data: it only changes the copy of the game you own.
