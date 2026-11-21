@@ -6,13 +6,13 @@ A randomizer for **Final Fantasy** on PC (Steam):
 - **Final Fantasy VII**: the original game (both the current Steam release and the 2013 one), **Remake Intergrade** and **Rebirth**.
 - **Final Fantasy VIII**: the 2013 Steam release and the Remaster.
 - **Final Fantasy IX**, with or without the Memoria mod engine.
-- **Final Fantasy X**: the HD Remaster. FFX-2 isn't touched.
+- **Final Fantasy X** and **Final Fantasy X-2**: the HD Remaster. Each is randomized on its own.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
 <p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2 or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
@@ -33,7 +33,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
-5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's options work in a save you already have too, except for chests you already opened.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's and FFX-2's options work in a save you already have too, except for chests you already opened.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
@@ -164,7 +164,7 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 
 ### Final Fantasy X (beta)
 
-**FINAL FANTASY X/X-2 HD Remaster** on Steam. Only FFX is changed; FFX-2 isn't touched. There's no mod loader to install. FFRando adds the changed files to the end of the game's archive (`data\FFX_Data.vbf`, about 16 MB) and points the game at them. **Put originals back** removes them again.
+**FINAL FANTASY X/X-2 HD Remaster** on Steam. Only FFX is changed here; FFX-2 has its own entry in the list (below). There's no mod loader to install. FFRando adds the changed files to the end of the game's archive (`data\FFX_Data.vbf`, about 16 MB) and points the game at them. **Put originals back** removes them again.
 
 - **Treasure chests**: what every chest and gift holds (items, gil and equipment) is shuffled between them. Key items stay where they are.
 - **Item shops**: every shop sells a different mix with as many items as before. Potion, Phoenix Down and Antidote stay.
@@ -175,6 +175,21 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
 <p align="center"><img src="screenshots/ffx.png" width="680" alt="The Final Fantasy X HD Remaster options: chests, shops, drops, steals and bribes"></p>
+
+### Final Fantasy X-2 (beta)
+
+The same **FINAL FANTASY X/X-2 HD Remaster** install, picked as **Final Fantasy X-2 HD Remaster** in the list. Only FFX-2 is changed; FFX isn't touched. There's no mod loader to install. FFRando adds the changed tables to the end of `data\FFX2_Data.vbf` (under 1 MB) and points the game at them. **Put originals back** removes them again.
+
+- **Treasure chests**: what every chest and gift holds (items, accessories and gil) is shuffled between them. Dresspheres, garment grids and key items stay where they are.
+- **Garment grids** (off unless you tick it): the grids you find or are given trade places with each other.
+- **Item shops**: every shop sells a different mix with as many items as before. Potion, Phoenix Down and Antidote stay.
+- **Accessories in shops**: each accessory a shop sells becomes another one from the shops that costs about as much.
+- **Enemy drops**, **steal items** and **bribe items**: fiends trade with fiends of a similar level, oversouls with oversouls, and bosses with bosses.
+- **Prices** and **enemy HP and stats** (off unless you tick them).
+
+Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
+
+<p align="center"><img src="screenshots/ffx2.png" width="680" alt="The Final Fantasy X-2 HD Remaster options: chests, garment grids, shops, drops, steals, bribes and stats"></p>
 
 ### Races
 
