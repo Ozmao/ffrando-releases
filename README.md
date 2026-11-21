@@ -6,12 +6,13 @@ A randomizer for **Final Fantasy** on PC (Steam):
 - **Final Fantasy VII**: the original game (both the current Steam release and the 2013 one), **Remake Intergrade** and **Rebirth**.
 - **Final Fantasy VIII**: the 2013 Steam release and the Remaster.
 - **Final Fantasy IX**, with or without the Memoria mod engine.
+- **Final Fantasy X**: the HD Remaster. FFX-2 isn't touched.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
 <p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8 or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
@@ -23,7 +24,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.13.156 supports 13 games and has 156 features.
+- **Version numbers** read 1.*games supported*.*features released*: 1.14.165 supports 14 games and has 165 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
@@ -32,7 +33,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
-5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's options work in a save you already have too, except for chests you already opened.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
@@ -160,6 +161,20 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | ⚠ Random encounters | needs Memoria | yes |
 | ⚠ Key items | needs Memoria | yes |
 | Cutscene skipper (doesn't change the seed) | needs Memoria | yes |
+
+### Final Fantasy X (beta)
+
+**FINAL FANTASY X/X-2 HD Remaster** on Steam. Only FFX is changed; FFX-2 isn't touched. There's no mod loader to install. FFRando adds the changed files to the end of the game's archive (`data\FFX_Data.vbf`, about 16 MB) and points the game at them. **Put originals back** removes them again.
+
+- **Treasure chests**: what every chest and gift holds (items, gil and equipment) is shuffled between them. Key items stay where they are.
+- **Item shops**: every shop sells a different mix with as many items as before. Potion, Phoenix Down and Antidote stay.
+- **Weapon shops**: each weapon and armor becomes another one for the same character, from what the shops around that point of the story sell.
+- **Enemy drops**, **steal items** and **bribe items**: monsters trade with monsters of a similar strength, and bosses with bosses.
+- **Item prices**, **equipment drops** (the abilities and slots of the gear monsters drop) and **enemy HP and stats** (off unless you tick them).
+
+Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
+
+<p align="center"><img src="screenshots/ffx.png" width="680" alt="The Final Fantasy X HD Remaster options: chests, shops, drops, steals and bribes"></p>
 
 ### Races
 
