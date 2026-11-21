@@ -8,6 +8,8 @@ A randomizer for **Final Fantasy** on PC (Steam):
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
+<p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
+
 - **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7 or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
@@ -50,6 +52,8 @@ All six share most options:
 - **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5) and double bosses.
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
+
+<p align="center"><img src="screenshots/pr.png" width="680" alt="The Final Fantasy VI Pixel Remaster options: items, shops and enemies"></p>
 
 ### Final Fantasy VII (Steam release and 2013)
 
@@ -99,9 +103,11 @@ Off by default:
 - Weapon abilities.
 - Weapon attack and magic attack.
 - Drop chances, stagger gauges and materia AP.
-- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music and Folio skill trees and Queen's Blood card power.
+- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music, Folio skill trees and Queen's Blood card power.
 
 Key items, summons and other things the story needs never move.
+
+<p align="center"><img src="screenshots/rebirth.png" width="680" alt="The Final Fantasy VII Rebirth options: items, chests, shops and battles"></p>
 
 ### Final Fantasy IX
 
@@ -109,6 +115,8 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 
 - **With Memoria:** FFRando installs the **Chaos Seed** mod and switches it on in Memoria's mod list, alongside your other Memoria mods. Every option works, and Chaos Seed randomizes inside the game when you start a new game. The Memoria launcher shows the same choices.
 - **Plain game (beta):** without Memoria, FFRando writes the same shuffles straight into the game's files. Options it can't do this way are marked **needs Memoria** in the window and greyed out.
+
+<p align="center"><img src="screenshots/ff9.png" width="680" alt="The Final Fantasy IX options with Memoria found: Chaos Seed randomizes inside the game"></p>
 
 | Option | Plain game | With Memoria |
 | --- | --- | --- |
