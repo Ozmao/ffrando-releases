@@ -20,14 +20,14 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.11.129 supports 11 games and has 129 features.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.147 supports 11 games and has 147 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
 
 1. **Close the game.**
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
-3. Type a seed or press **New seed**, then pick your options. Each game has its own set.
+3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
 5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere.
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
@@ -43,10 +43,10 @@ All six share most options:
 - **On by default:** treasure chests, shop stock, and enemy drops and steals. Each becomes something of a similar price: items stay items, and weapons and armor stay gear.
 - **Off by default:**
   - shop prices (half to twice as much), and weapon and armor stats;
-  - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, and enemy EXP and gil;
-  - item power, starting gear and battle backgrounds;
+  - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, enemy EXP and gil, and enemy levels (FF3 to FF6);
+  - item power, starting gear, battle backgrounds, and weapon and armor elements;
   - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music.
-- **For some games only:** spells learned by level (FF4, FF6), job abilities and job stats (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
+- **For some games only:** spells learned by level (FF4, FF6), job stats (FF3, FF5), job abilities (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
 - **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5) and double bosses.
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
@@ -55,7 +55,7 @@ Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items
 
 Enemy drops, steals and morphs · items in chests and materia lying around · shops and shop prices · random battles (at a similar level, or anywhere) · enemy HP and stats · spells between magic materia · summons between summon materia · materia slots on gear · starting materia, items and gear · stat growth · the order limit breaks are learned in (or, experimentally, limits between characters).
 
-Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP · item power (Potions, Ethers, Grenades...) · new elements for elemental armor · battle backgrounds · world map battles (moved between areas, chocobo battles stay).
+Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP · item power (Potions, Ethers, Grenades...) · new elements for elemental armor · battle backgrounds · world map battles (moved between areas, chocobo battles stay) · drop and steal chances · enemy levels · enemy attack power · elements on weapons · limit break needs.
 
 **⚠ Risky:** field music and double bosses.
 
@@ -76,6 +76,7 @@ Off by default:
 - Spells between magic materia, and the effects of command, support and independent materia.
 - Weapon abilities and weapon upgrade skills.
 - Weapon attack and magic attack.
+- Drop chances, stagger gauges and materia AP.
 - Stat growth between Cloud, Barret, Tifa and Aerith.
 - **⚠ Risky:** enemy groups between fights, Fort Condor opponents and music.
 
@@ -97,7 +98,8 @@ Off by default:
 - Spells between magic materia, and the other materia kinds.
 - Weapon abilities.
 - Weapon attack and magic attack.
-- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music and Folio skill trees.
+- Drop chances, stagger gauges and materia AP.
+- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music and Folio skill trees and Queen's Blood card power.
 
 Key items, summons and other things the story needs never move.
 
@@ -127,6 +129,8 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | Starting equipment (needs a new game) | yes | yes |
 | Character stats (the party trades base stats) | yes | yes |
 | Magic stone costs | yes | yes |
+| Item prices | yes | yes |
+| Who can wear armor | yes | yes |
 | ⚠ Synthesis recipes | yes | yes |
 | ⚠ Boss stats | yes | yes |
 | ⚠ Double bosses | yes | yes |
