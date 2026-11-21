@@ -22,7 +22,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 
 - It's a single file with nothing to install, for 64-bit Windows 10 or 11. Keep it somewhere you can write to, such as your Desktop or Documents. Updates can't be installed inside Program Files.
 - **It updates itself.** When a new version is out, a banner at the top of the window offers it. One click downloads it, checks it against the checksum GitHub has for it, and restarts. FF7Rando 1.4.60 updates to FFRando by itself.
-- **Version numbers** read 1.*games supported*.*features released*: 1.11.147 supports 11 games and has 147 features.
+- **Version numbers** read 1.*games supported*.*features released*: 1.11.148 supports 11 games and has 148 features.
 - The exe isn't code-signed, so Windows SmartScreen may warn you the first time. Click **More info → Run anyway**.
 
 ## How to use it
