@@ -9,12 +9,13 @@ A randomizer for **Final Fantasy** on PC (Steam):
 - **Final Fantasy X** and **Final Fantasy X-2**: the HD Remaster. Each is randomized on its own.
 - **Final Fantasy XII The Zodiac Age**.
 - **Final Fantasy XIII**, **Final Fantasy XIII-2** and **Lightning Returns: Final Fantasy XIII**.
+- **Final Fantasy XV Windows Edition**.
 
 Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called FF7Rando until version 1.5.72.
 
 <p align="center"><img src="screenshots/ff7.png" width="860" alt="FFRando with Final Fantasy VII picked: game, seed and the Standard preset on the left, the item and battle options on the right"></p>
 
-- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII, FFXIII, FFXIII-2, Lightning Returns or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
+- **No mod loader needed.** No 7th Heaven, FFNx, Reloaded-II or anything else to install for FF7, FF8, FFX, FFX-2, FFXII, FFXIII, FFXIII-2, Lightning Returns, FFXV or the Pixel Remasters. It changes the game itself. For FF9 it works on the plain game, and does even more if you have Memoria.
 - **Your originals are kept.** **Put originals back** undoes everything, whenever you like.
 - **Seeds.** The same seed and options always give the same game, so you can race a friend on the same shuffle.
 - **Races.** For every game: join a race with an invite link or host one yourself, with a live leaderboard.
@@ -35,7 +36,7 @@ Pick a seed, tick what to shuffle, press **Randomize**, and play. It was called 
 2. Pick the game in the **Game** list. Steam installs are found automatically. If yours isn't, use **Browse…** to point at the game folder.
 3. Type a seed or press **New seed**, then pick your options. Each game has its own set. A **Preset** sets them all at once: **Light** (the usual options), **Standard** (everything that's safe, numbers moved a little) or **Chaos** (everything, the risky options too, numbers moved a lot).
 4. Press **Randomize**.
-5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's, FFXII's, FFXIII's, FFXIII-2's and Lightning Returns' options work in a save you already have too, except for chests you already opened.
+5. Start the game. In the original FF7, FF9 and the Pixel Remasters, start a **new game**: starting materia, items and gear only apply to a new game, FF9's Chaos Seed randomizes when a new game starts, and chests already opened in a save stay opened. Drops, chests, shops and the rest of FF7's options apply everywhere, and so do all of FF8's. FFX's, FFX-2's, FFXII's, FFXIII's, FFXIII-2's, Lightning Returns' and FFXV's options work in a save you already have too, except for chests you already opened and the few options whose description says to start a new game (such as FFX's sphere grid and FFXV's Ascension grid).
 6. To go back to the normal game, press **Put originals back**. Do this before using Steam's *Verify integrity of game files*.
 
 Every randomize starts from the original files, so seeds never stack. Backups and spoiler logs are saved in an `FFRando` folder inside the game's folder.
@@ -124,6 +125,13 @@ Both Steam releases: **FINAL FANTASY VIII** (2013) and **FINAL FANTASY VIII Rema
 - **Enemy HP and stats** and **enemy elements** (off unless you tick them).
 - **Enemy status resistances** (off unless you tick it): each enemy's partial resistances to ailments trade places. What it's immune to, or not resistant to at all, stays.
 - **Enemy EXP and AP** (off unless you tick it): up or down by up to a third.
+- Off unless you tick them:
+  - **Mug and drop rates**: each enemy's chance to be mugged and to drop an item goes from half to twice what it was. Sure ones stay sure.
+  - **Level thresholds**: the levels at which enemies move on to their mid- and high-level draws, mugs, drops and attacks.
+  - **GF abilities**: the abilities the 16 GFs can learn are shuffled between them (21 each, no repeats). Magic, GF, Draw and Item stay, and what a GF already learned in your save stays learned.
+  - **Ability AP costs**, **GF power and HP**, **spell power**, **junction values**, **weapon stats**, **limit break power** and **battle item power**: each goes up or down, on its own.
+  - **Weapon upgrade costs**: the gil and item counts the Junk Shop wants.
+  - **⚠ Risky:** character stat growth, enemy attack power, weapon upgrade items (shuffled between all upgrades, so an early weapon may need a rare item) and status durations.
 
 Everything works in a save you already have. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -177,8 +185,14 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 - **Item prices**, **equipment drops** (the abilities and slots of the gear monsters drop) and **enemy HP and stats** (off unless you tick them).
 - **Enemy resistances** (off unless you tick it): every monster's fire, ice, lightning, water and holy weaknesses and resistances trade places, and so do its status resistances. Immunities stay. Scan's written tips may still describe the old ones.
 - **Enemy AP and gil** (off unless you tick it): up or down by up to a third, overkill AP too.
+- Off unless you tick them:
+  - **Equipment drop chances** and **overkill thresholds**.
+  - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **Sphere grid**: on every grid, abilities trade places with abilities and stat nodes with stat nodes, so a character's path leads to new abilities. Locks and empty nodes stay. Needs a new game.
+  - **Customize items** and **Customize amounts**: the items Rikku needs for each auto-ability trade places (Break HP Limit may take something easy to find), and how many goes from half to twice as many.
+  - **⚠ Risky:** **Lock levels** (a Lv. 1 lock can need a Lv. 4 Key Sphere) and **Whole sphere grid** (everything trades places, locks too). Both need a new game.
 
-Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
+Everything works in a save you already have (except the sphere grid options), but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
 <p align="center"><img src="screenshots/ffx.png" width="680" alt="The Final Fantasy X HD Remaster enemy options: drops, steals, bribes, equipment drops, stats, resistances, AP and gil"></p>
 
@@ -193,7 +207,13 @@ The same **FINAL FANTASY X/X-2 HD Remaster** install, picked as **Final Fantasy 
 - **Enemy drops**, **steal items** and **bribe items**: fiends trade with fiends of a similar level, oversouls with oversouls, and bosses with bosses.
 - **Prices** and **enemy HP and stats** (off unless you tick them).
 - **Enemy resistances** (off unless you tick it): every fiend's fire, ice, lightning, water and holy weaknesses and resistances trade places, and so do its status resistances. Immunities stay, and oversouls change the same way as their fiend.
-- **Enemy EXP and gil** (off unless you tick it): up or down by up to a third. Dressphere AP stays.
+- **Enemy EXP and gil** (off unless you tick it): up or down by up to a third.
+- Off unless you tick them:
+  - **Drop and steal chances** and **Dressphere AP** (what each fiend gives): from half to twice what they were.
+  - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **Dressphere stats**: each dressphere grows its HP, MP and stats like another dressphere.
+  - **Ability AP**: what each dressphere ability takes to learn, from half to twice as much.
+  - **⚠ Risky:** **passive abilities between dresspheres** (a Gunner can learn Initiative). Command abilities stay with their own dressphere.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -209,6 +229,12 @@ Everything works in a save you already have, but chests you already opened stay 
 - **Prices** and **enemy HP and stats** (off unless you tick them).
 - **Weapon and armor stats** (off unless you tick it): every weapon's attack, every armor and helm's defense and magick resist, and every shield's evasion go up or down by up to a third. Accessories stay.
 - **Enemy EXP, LP and clan points** (off unless you tick it): up or down by up to a third, and so does the rare gil.
+- Off unless you tick them:
+  - **License costs** and **chest gil**.
+  - **Boss and mark HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **License boards**: the licenses on each of the 12 job boards trade places, so each job opens up in a new order. Essentials stay.
+  - **Story and hunt rewards**: the items story events, hunts and sidequests give trade places within the same rank. Gil and key items stay.
+  - **⚠ Risky:** **licenses across all boards** (any job can get any license), **what licenses give** (a license keeps its name and cost but gives something else of the same kind) and **starting gear** (needs a new game).
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -227,6 +253,10 @@ Everything works in a save you already have, but chests you already opened stay 
   - **Enemy stagger**: the stagger point and chain resistance go up or down by up to a third.
   - **Weapon and accessory stats**: weapon strength and magic, and the HP, strength or magic bonus of accessories, go up or down by up to a third at every level.
   - **Crystarium**: within each stage of each role, the stat and ability nodes trade places, so abilities come sooner or later (in the same order).
+  - **Drop chances** and **enemy CP**: from half to twice what they were.
+  - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **Crystarium CP costs** and **Crystarium stat nodes**.
+  - **⚠ Risky:** **abilities across characters**: within each role, abilities trade places between the six, so Snow can learn Fira as a Ravager. Each character's own abilities stay. Use with a new game.
 
 Everything works in a save you already have, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -247,6 +277,11 @@ Everything works in a save you already have, but treasure you already opened sta
   - **Weapon and accessory stats**: weapons split their strength and magic differently (same total), and accessories cost up to a fifth more or less CL.
   - **Equipment passives**: weapon passives trade places (Serah's among Serah's, Noel's among Noel's), and so do accessories' extra passives.
   - **Crystarium**: each role learns its abilities at other levels, in the same order.
+  - **Drop chances** and **enemy gil**: from half to twice what they were.
+  - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **Monster growth**: each Paradigm Pack monster's HP, strength and magic.
+  - **Crystarium stats**: Serah's and Noel's HP, strength and magic nodes.
+  - **⚠ Risky:** **monster abilities**: what Paradigm Pack monsters learn as they level trades places with other monsters of the same role.
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -265,10 +300,31 @@ A save you already have should pick up the changes, but treasure you already ope
   - **Enemy stagger**: the stagger point and stagger resistance go up or down by up to a third.
   - **Weapon and shield stats**: strength, magic, HP and guard go up or down by up to a third, and so do the blacksmith's upgrade caps.
   - **Garb passives**: the passive bonuses of garbs trade places between garbs. Their abilities and ATB stay.
+  - **Drop chances**, and **enemy gil and EP**: from half to twice what they were.
+  - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
+  - **Quest stat rewards**: the HP, strength and magic each quest gives trade places. EP, ATB and item slot rewards stay.
+  - **Ability power**, **EP costs** (Arise, Overclock, Teleport... cost 1 to 6 EP) and **ability passives** (the extra passives an ability can come with).
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
 <p align="center"><img src="screenshots/lr.png" width="680" alt="The Lightning Returns enemy and equipment options: drops, stats, resistances, stagger, weapon and shield stats and garb passives"></p>
+
+### Final Fantasy XV (beta)
+
+**FINAL FANTASY XV WINDOWS EDITION** on Steam. There's no mod loader to install. FFRando adds the changed tables to the end of the game's archive (`datas\common\autobuild.earc`, about 4.3 MB with every option on) and points the game at them. **Put originals back** puts the archive back exactly as it was.
+
+- **Treasure**: what every treasure spot holds trades places with another spot; weapons and accessories trade with each other. Gil, EXP and key items stay.
+- **Shops**: what the shops sell changes to other things of the same kind, the same way in every shop. Potion and Phoenix Down stay.
+- **Enemy drops**: what enemies drop, and leave when a part breaks, is shuffled between enemies. The chances stay.
+- Off unless you tick them:
+  - **Prices**, **hunt rewards** (the items trade places, EXP and gil from half to twice as much), **enemy EXP** and **drop chances**.
+  - **Enemy HP and stats**, and **boss HP and stats**: level stays.
+  - **Enemy resistances**: the seven weapon types trade places, and so do fire, ice and lightning.
+  - **Weapon and accessory stats**, and **accessory bonuses** (the HP, MP, stat and element bonuses of plain accessories trade places).
+  - **Ascension AP costs**: every node costs from half to twice the AP.
+  - **⚠ Risky:** **Ascension grid**: each character's abilities trade places on the grid, so an upgrade may come before what it upgrades. Start a new save.
+
+It isn't confirmed yet that the game loads the changes, so please report how it goes.
 
 ### Races
 
@@ -313,6 +369,10 @@ The FFXIII treasure difficulties and locations, item and enemy ranks, shop names
 
 The FFXIII-2 treasure traits and locations, item kinds, enemy names and boss list come from Bartz24's [FF13-2 Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). FFXIII-2 scrambles its file lists the same way as Lightning Returns (see below).
 
-The Lightning Returns treasure difficulties and locations, item kinds and ranks, enemy names, shop names and boss list come from Bartz24's [LR Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). How Lightning Returns scrambles its file lists was learned from Surihix's [WhiteBinTools](https://github.com/Surihix/WhiteBinTools) (GPL-3.0); FFRando has its own code for it. The Lightning Returns enemy and equipment fields were checked against the LR Research Team wiki.
+The Lightning Returns treasure difficulties and locations, item kinds and ranks, enemy names, shop names and boss list come from Bartz24's [LR Randomizer](https://github.com/Bartz24/FFModdingWPF) (MIT License, Copyright (c) 2023 Bartz24). How Lightning Returns scrambles its file lists was learned from Surihix's [WhiteBinTools](https://github.com/Surihix/WhiteBinTools) (GPL-3.0); FFRando has its own code for it. The Lightning Returns enemy and equipment fields were checked against the LR Research Team wiki. The Lightning Returns quest and ability layouts and the FFXII license, reward and party layouts also come from Bartz24's randomizers.
+
+The FFVIII kernel and Junk Shop layouts come from the [FF8 Modding Wiki](https://hobbitdur.github.io/FF8ModdingWiki), and the FFX sphere grid and customize layouts follow Karifean's [FFXDataParser](https://github.com/Karifean/FFXDataParser).
+
+The FFXV archive format is as Kizari's [Flagrum](https://github.com/Kizari/Flagrum) (GPL-3.0) documents it; FFRando has its own code for it.
 
 FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. This is a fan project and isn't affiliated with or endorsed by Square Enix. It ships no game data: it only changes the copy of the game you own.
