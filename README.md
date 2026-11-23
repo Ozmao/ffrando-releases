@@ -326,6 +326,8 @@ A save you already have should pick up the changes, but treasure you already ope
 
 It isn't confirmed yet that the game loads the changes, so please report how it goes.
 
+<p align="center"><img src="screenshots/ff15.png" width="680" alt="The Final Fantasy XV options: weapon and accessory stats, accessory bonuses, Ascension AP costs and the risky Ascension grid"></p>
+
 ### Races
 
 Races work for every game in the list. Open the **Race** card in the left column, under **Seed**.
