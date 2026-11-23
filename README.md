@@ -52,9 +52,10 @@ All six share most options:
   - shop prices (half to twice as much), and weapon and armor stats;
   - enemy HP and stats, boss HP and stats, enemy weaknesses and immunities, enemy EXP and gil, and enemy levels (FF3 to FF6);
   - item power, starting gear, battle backgrounds, and weapon and armor elements;
-  - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music.
-- **For some games only:** spells learned by level (FF4, FF6), job stats (FF3, FF5), job abilities (FF5), esper spells, Mog's dances and Gau's Rages (FF6).
-- **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5) and double bosses.
+  - character stats and growth, faster leveling (not FF2), spell power and MP cost, and music;
+  - enemy accuracy and evasion, enemy types (undead, dragon...), enemy MP (FF2, FF4 to FF6), enemy speed (FF1, FF3 to FF6), enemy hits per attack (FF1, FF2) and stat bonuses on gear (FF2 to FF6). Bosses keep theirs.
+- **For some games only:** spells learned by level (FF4, FF6), job stats (FF3, FF5), job abilities and job ABP costs (FF5), esper spells, esper learning rates, Mog's dances and Gau's Rages (FF6).
+- **⚠ Risky:** random encounters (each swapped for a battle of a similar level), who can equip what, job commands (FF3, FF5), double bosses, boss shuffle and enemy starting statuses (Float, Haste, Reflect... trade between enemies).
 
 Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items, FF2's tomes) and boss fights never move. FFRando rewrites the game's own data files and keeps the originals in the `FFRando` folder. Steam's *Verify integrity* or an update also puts the originals back.
 
@@ -64,9 +65,9 @@ Key items, gil, spells, summons (FF4's and FF5's summon items, FF3's spell items
 
 Enemy drops, steals and morphs · items in chests and materia lying around · shops and shop prices · random battles (at a similar level, or anywhere) · enemy HP and stats · spells between magic materia · summons between summon materia · materia slots on gear · starting materia, items and gear · stat growth · the order limit breaks are learned in (or, experimentally, limits between characters).
 
-Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP · item power (Potions, Ethers, Grenades...) · new elements for elemental armor · battle backgrounds · world map battles (moved between areas, chocobo battles stay) · drop and steal chances · enemy levels · enemy attack power · elements on weapons · limit break needs.
+Off by default: boss HP and stats · EXP, AP and gil · elemental weaknesses and status immunities · weapon and armor stats · materia growth on gear · accessory effects · spell power and MP · materia AP · item power (Potions, Ethers, Grenades...) · new elements for elemental armor · battle backgrounds · world map battles (moved between areas, chocobo battles stay) · drop and steal chances · enemy levels · enemy attack power · elements on weapons · limit break needs · materia stat changes (Mag +1, HP -2%...) · starting stats · starting HP and MP · stat bonuses on gear · enemy MP · escape difficulty.
 
-**⚠ Risky:** field music and double bosses.
+**⚠ Risky:** field music, double bosses, boss shuffle and surprise attacks (about one battle in four you can run from starts as a back attack or a preemptive strike).
 
 On the new Steam release, chests and random battles are only shuffled when playing in English.
 
@@ -85,9 +86,10 @@ Off by default:
 - Spells between magic materia, and the effects of command, support and independent materia.
 - Weapon abilities and weapon upgrade skills.
 - Weapon attack and magic attack.
-- Drop chances, stagger gauges and materia AP.
+- Drop chances, stagger gauges, stagger time and materia AP.
 - Stat growth between Cloud, Barret, Tifa and Aerith.
-- **⚠ Risky:** enemy groups between fights, Fort Condor opponents and music.
+- Armor defense, party HP and MP, materia stat bonuses (max MP +2%, Magic +1...) and enemy levels.
+- **⚠ Risky:** enemy groups between fights, Fort Condor opponents, music and weapon materia slots (starting weapons keep theirs).
 
 Remake isn't changed at all: everything goes into one mod file (`End\Content\Paks\~mods\FFRando_P.pak`), and **Put originals back** deletes it.
 
@@ -107,8 +109,9 @@ Off by default:
 - Spells between magic materia, and the other materia kinds.
 - Weapon abilities.
 - Weapon attack and magic attack.
-- Drop chances, stagger gauges and materia AP.
-- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music, Folio skill trees and Queen's Blood card power.
+- Drop chances, stagger gauges, stagger time and materia AP.
+- Armor defense, party HP and MP, materia stat bonuses and enemy levels.
+- **⚠ Risky:** roaming enemies, Queen's Blood decks, field music, Folio skill trees, Queen's Blood card power and weapon materia slots.
 
 Key items, summons and other things the story needs never move.
 
@@ -131,7 +134,8 @@ Both Steam releases: **FINAL FANTASY VIII** (2013) and **FINAL FANTASY VIII Rema
   - **GF abilities**: the abilities the 16 GFs can learn are shuffled between them (21 each, no repeats). Magic, GF, Draw and Item stay, and what a GF already learned in your save stays learned.
   - **Ability AP costs**, **GF power and HP**, **spell power**, **junction values**, **weapon stats**, **limit break power** and **battle item power**: each goes up or down, on its own.
   - **Weapon upgrade costs**: the gil and item counts the Junk Shop wants.
-  - **⚠ Risky:** character stat growth, enemy attack power, weapon upgrade items (shuffled between all upgrades, so an early weapon may need a rare item) and status durations.
+  - **Draw difficulty**, **stat-up ability values**, **GF EXP per level**, **Selphie's Slot spells** and **Devour results**.
+  - **⚠ Risky:** character stat growth, enemy attack power, weapon upgrade items (shuffled between all upgrades, so an early weapon may need a rare item), status durations and character EXP per level (a save made before shows other levels).
 
 Everything works in a save you already have. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -167,6 +171,11 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
 | Magic stone costs | yes | yes |
 | Item prices | yes | yes |
 | Who can wear armor | yes | yes |
+| Enemy attack power | yes | no (plain game only) |
+| Enemy attack elements | yes | no (plain game only) |
+| Enemy levels | yes | no (plain game only) |
+| Stat bonuses on gear | yes | no (plain game only) |
+| Weapon elements and statuses | yes | no (plain game only) |
 | ⚠ Synthesis recipes | yes | yes |
 | ⚠ Boss stats | yes | yes |
 | ⚠ Double bosses | yes | yes |
@@ -190,7 +199,8 @@ How FF9 gets randomized depends on whether **[Memoria](https://github.com/Albeor
   - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
   - **Sphere grid**: on every grid, abilities trade places with abilities and stat nodes with stat nodes, so a character's path leads to new abilities. Locks and empty nodes stay. Needs a new game.
   - **Customize items** and **Customize amounts**: the items Rikku needs for each auto-ability trade places (Break HP Limit may take something easy to find), and how many goes from half to twice as many.
-  - **⚠ Risky:** **Lock levels** (a Lv. 1 lock can need a Lv. 4 Key Sphere) and **Whole sphere grid** (everything trades places, locks too). Both need a new game.
+  - **Ability MP costs**, **spell and skill power**, **enemy attack power**, **spoils amounts** and **chest amounts**.
+  - **⚠ Risky:** **Lock levels** (a Lv. 1 lock can need a Lv. 4 Key Sphere) and **Whole sphere grid** (everything trades places, locks too), both needing a new game, and **enemy attack elements**.
 
 Everything works in a save you already have (except the sphere grid options), but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -213,7 +223,8 @@ The same **FINAL FANTASY X/X-2 HD Remaster** install, picked as **Final Fantasy 
   - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
   - **Dressphere stats**: each dressphere grows its HP, MP and stats like another dressphere.
   - **Ability AP**: what each dressphere ability takes to learn, from half to twice as much.
-  - **⚠ Risky:** **passive abilities between dresspheres** (a Gunner can learn Initiative). Command abilities stay with their own dressphere.
+  - **Ability MP costs**, **spell and skill power**, **enemy attack power**, **spoils amounts** and **chest amounts**.
+  - **⚠ Risky:** **passive abilities between dresspheres** (a Gunner can learn Initiative; command abilities stay with their own dressphere) and **enemy attack elements**.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -234,7 +245,8 @@ Everything works in a save you already have, but chests you already opened stay 
   - **Boss and mark HP and stats**: on top of Enemy HP and stats if that's on too.
   - **License boards**: the licenses on each of the 12 job boards trade places, so each job opens up in a new order. Essentials stay.
   - **Story and hunt rewards**: the items story events, hunts and sidequests give trade places within the same rank. Gil and key items stay.
-  - **⚠ Risky:** **licenses across all boards** (any job can get any license), **what licenses give** (a license keeps its name and cost but gives something else of the same kind) and **starting gear** (needs a new game).
+  - **Magick MP costs**, **magick power**, **enemy ability power**, **status chances** and **chest chances**.
+  - **⚠ Risky:** **licenses across all boards** (any job can get any license), **what licenses give** (a license keeps its name and cost but gives something else of the same kind), **starting gear** (needs a new game) and **enemy ability elements**.
 
 Everything works in a save you already have, but chests you already opened stay opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -256,7 +268,9 @@ Everything works in a save you already have, but chests you already opened stay 
   - **Drop chances** and **enemy CP**: from half to twice what they were.
   - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
   - **Crystarium CP costs** and **Crystarium stat nodes**.
+  - **Treasure amounts**, **sell prices**, **component EXP** and **accessory effects**.
   - **⚠ Risky:** **abilities across characters**: within each role, abilities trade places between the six, so Snow can learn Fira as a Ravager. Each character's own abilities stay. Use with a new game.
+  - **⚠ Risky:** **physical and magic resistance**: which regular enemies resist physical or magic damage trades between them. Bosses keep theirs.
 
 Everything works in a save you already have, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -281,7 +295,9 @@ Everything works in a save you already have, but treasure you already opened sta
   - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
   - **Monster growth**: each Paradigm Pack monster's HP, strength and magic.
   - **Crystarium stats**: Serah's and Noel's HP, strength and magic nodes.
+  - **Treasure amounts**, **sell prices**, **accessory effects** and **enemy defense**.
   - **⚠ Risky:** **monster abilities**: what Paradigm Pack monsters learn as they level trades places with other monsters of the same role.
+  - **⚠ Risky:** **physical and magic resistance**: how regular enemies take physical and magic damage trades between them. Bosses keep theirs.
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -304,6 +320,8 @@ A save you already have should pick up the changes, but treasure you already ope
   - **Boss HP and stats**: on top of Enemy HP and stats if that's on too.
   - **Quest stat rewards**: the HP, strength and magic each quest gives trade places. EP, ATB and item slot rewards stay.
   - **Ability power**, **EP costs** (Arise, Overclock, Teleport... cost 1 to 6 EP) and **ability passives** (the extra passives an ability can come with).
+  - **Treasure amounts**, **sell prices**, **ATB costs** (every level still costs something) and **garb ATB** (extra ATB and how full the bar starts).
+  - **⚠ Risky:** **physical and magic resistance**: how much physical and magic damage regular enemies take trades between them. Bosses keep theirs.
 
 A save you already have should pick up the changes, but treasure you already opened stays opened. It hasn't been tried in the game yet, so please report anything that looks wrong.
 
@@ -322,7 +340,9 @@ A save you already have should pick up the changes, but treasure you already ope
   - **Enemy resistances**: the seven weapon types trade places, and so do fire, ice and lightning.
   - **Weapon and accessory stats**, and **accessory bonuses** (the HP, MP, stat and element bonuses of plain accessories trade places).
   - **Ascension AP costs**: every node costs from half to twice the AP.
+  - **Treasure amounts**, **hunt reward amounts**, **drop amounts** and **resistance strength** (a 20% weakness can become 10% or 30%).
   - **⚠ Risky:** **Ascension grid**: each character's abilities trade places on the grid, so an upgrade may come before what it upgrades. Start a new save.
+  - **⚠ Risky:** **enemy levels**: every regular enemy's level goes up or down by up to a fifth. Bosses keep theirs.
 
 It isn't confirmed yet that the game loads the changes, so please report how it goes.
 
